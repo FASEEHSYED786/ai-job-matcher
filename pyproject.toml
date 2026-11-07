@@ -1,0 +1,11 @@
+[project]
+name = "ai-job-matcher"
+version = "0.1.0"
+description = "Score a CV against job descriptions: skill extraction, gap analysis and ranked matches"
+requires-python = ">=3.10"
+[project.optional-dependencies]
+dev = ["pytest"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
